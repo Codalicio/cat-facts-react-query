@@ -25,7 +25,7 @@ export default function CatFacts() {
     });
 
   if (isLoading) {
-    return <h2>Cat fact Loading...</h2>;
+    return <h2>Random fact Loading...</h2>;
   }
 
   if (isError) {
@@ -34,7 +34,7 @@ export default function CatFacts() {
 
   return (
     <>
-      <h2>Cat Facts</h2>
+      <h2>Random Facts</h2>
       <p>{status}</p>
       {data && <h3>{data}</h3>}
       <button
